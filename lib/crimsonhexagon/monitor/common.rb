@@ -37,7 +37,7 @@ module CrimsonHexagon
         options.merge!(id: id,
                        start: start_date,
                        end: end_date)
-        response = get("monitor/wordcloud", options)
+        response = get("monitor/wordcloud", options, false, true)
         response
       end
 
